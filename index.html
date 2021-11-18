@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form class="container">
+        <h3>Express to Post</h3>
+        <label>First Name:</label></br>
+        <input id="fname" name="fname" type="text" required></br>
+        <label>Last Name:</label></br>
+        <input id="lname" name="lname" type="text" required></br>
+        <label>Phone Number:</label></br>
+        <input id="phoneNumber" name="phoneNumber" type="text" pattern="^09\d{8}$" required></br>
+        <label>Email Address:</label></br>
+        <input id="emailAddress" name="emailAddress" type="email" required></br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
