@@ -4,19 +4,22 @@
 <head>
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <script src="index.js" defer></script>
+    
 </head>
 
 <body>
-    <form class="container">
+    <form class="container" action="/send" method="post">
         <h3>Express to Post</h3>
-        <label>First Name:</label></br>
-        <input id="fname" name="fname" type="text" required></br>
-        <label>Last Name:</label></br>
-        <input id="lname" name="lname" type="text" required></br>
-        <label>Phone Number:</label></br>
-        <input id="phoneNumber" name="phoneNumber" type="text" pattern="^09\d{8}$" required></br>
-        <label>Email Address:</label></br>
-        <input id="emailAddress" name="emailAddress" type="email" required></br>
+        <label>First Name*:</label></br>
+        <input id="FirstName" name="FirstName" type="text" required></br>
+        <label>Last Name*:</label></br>
+        <input id="LastName" name="LastName" type="text" required></br>
+        <label>Phone Number*:</label></br>
+        <input id="PhoneNumber" name="PhoneNumber" type="text" pattern="^09\d{8}$" required></br>
+        <label>Email Address*:</label></br>
+        <input id="EmailAddress" name="EmailAddress" type="email" required></br>
+        <label>Password*:</label></br>
+        <input id="Password" name="Password" type="password" required></br>
         <input type="submit" value="Submit">
     </form>
 </body>
