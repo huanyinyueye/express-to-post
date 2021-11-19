@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <script src="index.js" defer></script>
-    
+
 </head>
 
 <body>
@@ -19,9 +19,19 @@
         <label>Email Address*:</label></br>
         <input id="EmailAddress" name="EmailAddress" type="email" required></br>
         <label>Password*:</label></br>
-        <input id="Password" name="Password" type="password" required></br>
+        <input id="Password" name="Password" type="password" required>
+        <input type="checkbox" onclick="ShowPassword()"><small>ShowPassword</small></br>
         <input type="submit" value="Submit">
     </form>
+    <script>
+        function ShowPassword() {
+            var x = document.getElementById("Password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else { x.type = "password"; }
+        }
+
+    </script>
 </body>
 
 </html>
